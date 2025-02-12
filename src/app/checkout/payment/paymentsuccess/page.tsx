@@ -16,7 +16,7 @@ export default function PaymentSuccess({
         </div>
 
         <div className="mt-10">
-          <Link href="/Shop" className="text-blue-200 hover:text-blue-100 underline">
+          <Link href="/shop" className="text-blue-200 hover:text-blue-100 underline">
             Go back to shopping
           </Link>
         </div>
