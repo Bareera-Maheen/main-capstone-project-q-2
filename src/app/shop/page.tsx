@@ -241,8 +241,8 @@ const Shop = () => {
        
       </header>
 
-      <section className="flex justify-evenly w-full h-[100px] bg-[#FAF4F4] mt-[47px] wrapper sm:h-auto  md:w-auto sm:width-auto">
-        <div className="lg:flex xl:flex md:flex-col sm:flex-col items-center gap-5"> 
+      <section className="flex lg:flex xl:flex md:flex-col sm:flex-col justify-evenly w-full h-[100px] bg-[#FAF4F4] mt-[47px] wrapper  sm:h-auto  md:w-auto sm:width-auto">
+        <div className="flex items-center gap-5"> 
           <SlidersHorizontal size={28} />
           <h6 className="text-[20px] ml-2">Filter</h6>
           <HiOutlineViewGrid size={28} />
@@ -290,7 +290,7 @@ const Shop = () => {
             />
           </div>
 
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-6">
             {products.map((product) => (
               <div key={product._id} className="text-left flex flex-col items-center p-4 bg-white shadow-md rounded-lg">
                 <Link href={`/shop/${product._id}`} key={product._id}>
