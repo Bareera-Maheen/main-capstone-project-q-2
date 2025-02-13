@@ -73,7 +73,7 @@ const MobileNav = () => {
           {/* Optional: Add a button for mobile-specific actions */}
           <div className="mt-8 text-center">
             <button
-              className="w-full bg-primary text-white py-2 rounded-md font-semibold"
+              className="w-full bg-[#FBEBB5] text-black py-2 rounded-md font-semibold"
               onClick={handleLinkClick}
             >
               <Link href="/contact">Login</Link>
