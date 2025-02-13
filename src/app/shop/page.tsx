@@ -241,8 +241,8 @@ const Shop = () => {
        
       </header>
 
-      <section className="flex justify-evenly w-full h-[100px] bg-[#FAF4F4] mt-[47px]">
-        <div className="flex items-center gap-5">
+      <section className="flex justify-evenly w-full h-[100px] bg-[#FAF4F4] mt-[47px] wrapper sm:h-auto  md:w-auto sm:width-auto">
+        <div className="lg:flex xl:flex md:flex-col sm:flex-col items-center gap-5"> 
           <SlidersHorizontal size={28} />
           <h6 className="text-[20px] ml-2">Filter</h6>
           <HiOutlineViewGrid size={28} />

@@ -31,7 +31,7 @@ const CartPage: React.FC = () => {
       {cart.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
-        <div className="flex gap-6">
+        <div className="lg:flex xl:flex md:flex-col sm:flex-col gap-6 wrapper ">
           <div className="w-2/3">
             <table className="min-w-full table-auto border-collapse">
               <thead>
@@ -47,7 +47,7 @@ const CartPage: React.FC = () => {
                 {cart.map((item) => {
                   const discountedPrice = item.price - (item.price * (item.discountPercentage / 100));
                   return (
-                    <tr key={item._id} className="border-b">
+                    <tr key={item._id} className="border-b ">
                       <td className="px-4 py-2">
                         <div className="flex items-center">
                           <Image src={item.imageUrl} alt={item.name} width={50} height={50} className="w-12 h-12 object-cover rounded-md mr-4" />
@@ -90,7 +90,7 @@ const CartPage: React.FC = () => {
           </div>
 
           {/* Cart Totals */}
-          <div className="w-1/3 bg-amber-100 p-4 rounded-md">
+          <div className="w-1/3 bg-amber-100 p-4 rounded-md wrapper">
             <h3 className="text-xl font-semibold mb-4">Cart Totals</h3>
             <div className="flex justify-between mb-2">
               <span className="font-medium">Subtotal</span>
